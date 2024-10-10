@@ -6,11 +6,19 @@
         "use": "@vercel/node"
       },
       {
-        "src": "public/**",
+        "src": "public/**/*",
         "use": "@vercel/static"
       }
     ],
     "routes": [
+      {
+        "src": "/favicon.ico",
+        "dest": "/public/favicon.ico"
+      },
+      {
+        "src": "/logo.svg",
+        "dest": "/public/logo.svg"
+      },
       {
         "src": "/styles.css",
         "dest": "/public/styles.css"
