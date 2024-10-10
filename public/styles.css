@@ -42,9 +42,9 @@ header {
 }
 
 .logo {
-    width: 150px;
-    height: 150px;
-    margin-left: 2rem;
+    width: 100px;
+    height: 100px;
+    margin-top: 0;  /* Add this line */
 }
 
 h1 {
@@ -91,7 +91,7 @@ h1 {
 footer {
     background-color: #ffffff;
     color: #666;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
     text-align: center;
     border-radius: 10px;
     margin: 2rem;
@@ -115,16 +115,18 @@ footer nav a:hover {
 .two-column {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;  /* Change this line */
 }
 
 .left-column, .right-column {
     flex: 1;
+    display: flex;  /* Add this line */
+    flex-direction: column;  /* Add this line */
 }
 
 .right-column {
-    display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;  /* Change this line */
+    align-items: flex-end;  /* Change this line */
 }
 
 @media (max-width: 600px) {
@@ -145,8 +147,8 @@ footer nav a:hover {
         width: 100px;
         height: 100px;
         margin-left: 0;
-        margin-top: 1rem;
-        align-self: flex-end;
+        margin-top: 0;  /* Change this line */
+        align-self: flex-start;  /* Change this line */
     }
 
     h1 {
@@ -159,14 +161,17 @@ footer nav a:hover {
 
     .two-column {
         flex-direction: column;
+        align-items: flex-start;  /* Add this line */
     }
 
     .right-column {
-        justify-content: center;
+        align-items: flex-start;  /* Change this line */
         margin-top: 1rem;
     }
 
     .logo {
         margin-left: 0;
+        margin-top: 0;
+        align-self: flex-start;
     }
 }
