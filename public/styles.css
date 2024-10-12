@@ -175,3 +175,82 @@ footer nav a:hover {
         align-self: flex-start;
     }
 }
+
+/* Styles for terms and privacy pages */
+.max-w-screen-xl {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.reset {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.reset h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.reset h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.reset h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.reset p, .reset ul, .reset ol {
+    margin-bottom: 1rem;
+}
+
+.reset ul, .reset ol {
+    padding-left: 2rem;
+}
+
+.reset li {
+    margin-bottom: 0.5rem;
+}
+
+.reset a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.reset a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .max-w-screen-xl {
+        padding: 1rem;
+    }
+
+    .reset {
+        padding: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .reset h1 {
+        font-size: 2rem;
+    }
+
+    .reset h2 {
+        font-size: 1.75rem;
+    }
+
+    .reset h3 {
+        font-size: 1.25rem;
+    }
+}
